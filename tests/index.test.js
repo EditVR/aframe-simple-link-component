@@ -1,24 +1,24 @@
 /* global assert, setup, suite, test */
 require('aframe');
 require('../index.js');
-var entityFactory = require('./helpers').entityFactory;
+const { entityFactory } = require('./helpers');
 
-suite('simple-link component', function () {
-  var component;
-  var el;
+suite('simple-link component', () => {
+  let el;
 
-  setup(function (done) {
+  setup(done => {
     el = entityFactory();
-    el.addEventListener('componentinitialized', function (evt) {
-      if (evt.detail.name !== 'simple-link') { return; }
-      component = el.components['simple-link'];
+    el.addEventListener('componentinitialized', evt => {
+      if (evt.detail.name !== 'simple-link') {
+        return;
+      }
       done();
     });
     el.setAttribute('simple-link', {});
   });
 
-  suite('foo property', function () {
-    test('is good', function () {
+  suite('foo property', () => {
+    test('is good', () => {
       assert.equal(1, 1);
     });
   });
