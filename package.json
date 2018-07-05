@@ -5,9 +5,9 @@
   "main": "index.js",
   "unpkg": "dist/aframe-simple-link-component.min.js",
   "scripts": {
-    "build": "webpack index.js dist/aframe-dialog-popup-component.js",
-    "dev": "budo index.js:dist/aframe-dialog-popup-component.min.js --port 7000 --live --open",
-    "dist": "npm run build && uglifyjs dist/aframe-dialog-popup-component.js > dist/aframe-dialog-popup-component.min.js",
+    "build": "webpack index.js dist/aframe-simple-link-component.js",
+    "dev": "budo index.js:dist/aframe-simple-link-component.min.js --port 7000 --live --open",
+    "dist": "npm run build && uglifyjs dist/aframe-simple-link-component.js > dist/aframe-simple-link-component.min.js",
     "lint": "eslint --ext .jsx,.js .",
     "prepublishOnly": "npm run dist",
     "prettier": "prettier --write \"**/*.{js,jsx,json,css}\"",
