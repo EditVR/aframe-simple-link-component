@@ -34,7 +34,10 @@
     "simple-link"
   ],
   "author": "Patrick Coffey <patrickcoffey48@gmail.com>",
-  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/editvr/aframe-simple-link-component/issues"
   },
