@@ -9,8 +9,11 @@
     <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
-    <a-scene environment="preset: forest">
-      <a-entity simple-link=""></a-entity>
+    <a-scene environment="preset: forest" cursor="rayOrigin: mouse">
+      <a-assets>
+        <img id="linkImage" src="./assets/link.png">
+      </a-assets>
+      <a-entity position="0 1 -5" simple-link="href: index.html; title: My Homepage; image: #linkImage; "></a-entity>
     </a-scene>
 
     <!-- GitHub Corner. -->
