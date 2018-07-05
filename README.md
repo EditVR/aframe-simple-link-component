@@ -4,7 +4,7 @@
 [![CircleCI](http://img.shields.io/circleci/project/github/EditVR/aframe-simple-link-component.svg?style=flat-square)](https://npmjs.org/package/@editvr/aframe-dialog-popup-component)
 [![License](http://img.shields.io/npm/l/@editvr/aframe-simple-link-component.svg?style=flat-square)](https://npmjs.org/package/aframe-dialog-popup-component)
 
-Provides a component that makes an entity into a clickable link hotspot. Simple alternative to using &lt;a-link&gt;.
+Provides a component that makes an entity into a clickable link hotspot. Simple alternative to using `<a-link>`.
 
 For [A-Frame](https://aframe.io).
 
