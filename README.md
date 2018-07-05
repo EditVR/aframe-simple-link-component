@@ -39,7 +39,7 @@ Install and use by directly including the [browser files](dist):
 Install via npm:
 
 ```bash
-npm install aframe-simple-link-component
+npm install @editvr/aframe-simple-link-component
 ```
 
 Then require and use.
