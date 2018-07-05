@@ -24,7 +24,7 @@ Install and use by directly including the [browser files](dist):
 <head>
   <title>My A-Frame Scene</title>
   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-  <script src="https://unpkg.com/aframe-simple-link-component/dist/aframe-simple-link-component.min.js"></script>
+  <script src="https://unpkg.com/@editvr/aframe-simple-link-component/dist/aframe-simple-link-component.min.js"></script>
 </head>
 
 <body>
@@ -46,5 +46,5 @@ Then require and use.
 
 ```js
 require('aframe');
-require('aframe-simple-link-component');
+require('@editvr/aframe-simple-link-component');
 ```
