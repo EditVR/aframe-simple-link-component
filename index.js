@@ -14,6 +14,7 @@ AFRAME.registerComponent('simple-link', {
     lookAtCamera: { default: true, type: 'boolean' },
     href: { default: '', type: 'string' },
     title: { default: '', type: 'string' },
+    radius: { default: 1, type: 'number' },
     color: { default: '#fff', type: 'color' },
     titleColor: { default: '#fff', type: 'color' },
     image: { default: '', type: 'asset' },
@@ -34,7 +35,7 @@ AFRAME.registerComponent('simple-link', {
 
     el.setAttribute('geometry', {
       primitive: 'circle',
-      radius: 1
+      radius: this.data.radius
     });
     if (this.data.image) {
       el.setAttribute('material', {
