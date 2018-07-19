@@ -116,7 +116,7 @@ AFRAME.registerComponent('simple-link', {
       });
     }
 
-    const textEl = this.textEl || document.createElement('a-entity');
+    const textEl = document.createElement('a-entity');
 
     textEl.setAttribute('text', {
       color: this.data.textColor,
