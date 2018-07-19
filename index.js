@@ -15,6 +15,7 @@ AFRAME.registerComponent('simple-link', {
     href: { default: '', type: 'string' },
     title: { default: '', type: 'string' },
     radius: { default: 1, type: 'number' },
+    font: {default: 'kelsonsans', type: 'string' },
     color: { default: '#fff', type: 'color' },
     titleColor: { default: '#fff', type: 'color' },
     image: { default: '', type: 'asset' },
@@ -49,7 +50,7 @@ AFRAME.registerComponent('simple-link', {
     textEl.setAttribute('text', {
       color: this.data.textColor,
       align: 'center',
-      font: 'kelsonsans',
+      font: this.data.font,
       value: this.data.title || this.data.href,
       width: 4
     });
