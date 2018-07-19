@@ -111,10 +111,7 @@ AFRAME.registerComponent('simple-link', {
     });
     if (this.data.image) {
       el.setAttribute('material', {
-        src:
-          typeof this.data.image === 'string'
-            ? this.data.image
-            : this.data.image.src,
+        src: this.data.image,
         color: this.data.color
       });
     }
