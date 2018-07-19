@@ -106,13 +106,10 @@ AFRAME.registerComponent('simple-link', {
   },
 
   removeEventListener() {
-    const {
-      data: { on }
-    } = this;
-    if (!on) {
-      return;
+    const { data: { on } } = this;
+    if (on) {
+      this.el.removeEventListener(on, this.navigate);
     }
-    this.el.removeEventListener(on, this.navigate);
   },
 
   /**
