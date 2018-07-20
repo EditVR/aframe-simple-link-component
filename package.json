@@ -106,5 +106,10 @@
       "examples/build.js",
       "dist/**"
     ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "babel-loader": "^8.0.0-beta"
   }
 }
