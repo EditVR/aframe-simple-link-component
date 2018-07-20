@@ -2,7 +2,7 @@
   "name": "@editvr/aframe-simple-link-component",
   "version": "0.0.0-development",
   "description": "Provides a component that makes an entity into a clickable link hotspot. Simple alternative to using &lt;a-link&gt;.",
-  "main": "index.js",
+  "main": "dist/aframe-simple-link-component.js",
   "unpkg": "dist/aframe-simple-link-component.min.js",
   "scripts": {
     "build": "webpack index.js dist/aframe-simple-link-component.js",
