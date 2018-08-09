@@ -11,11 +11,11 @@ if (typeof AFRAME === 'undefined') {
  */
 AFRAME.registerComponent('simple-link', {
   schema: {
-    lookAtCamera: { default: true, type: 'boolean' },
+    active: { default: true, type: 'boolean' },
     href: { default: '', type: 'string' },
     title: { default: '', type: 'string' },
     radius: { default: 1, type: 'number' },
-    font: {default: 'kelsonsans', type: 'string' },
+    font: { default: 'kelsonsans', type: 'string' },
     color: { default: '#fff', type: 'color' },
     titleColor: { default: '#fff', type: 'color' },
     image: { default: '', type: 'asset' },
@@ -106,7 +106,9 @@ AFRAME.registerComponent('simple-link', {
   },
 
   removeEventListener() {
-    const { data: { on } } = this;
+    const {
+      data: { on }
+    } = this;
     if (on) {
       this.el.removeEventListener(on, this.navigate);
     }
@@ -117,6 +119,8 @@ AFRAME.registerComponent('simple-link', {
    *
    */
   navigate() {
-    window.location = this.data.href;
+    if (this.data.active) {
+      window.location = this.data.href;
+    }
   }
 });

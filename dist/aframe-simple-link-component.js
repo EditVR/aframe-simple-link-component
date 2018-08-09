@@ -84,7 +84,7 @@ if (typeof AFRAME === 'undefined') {
 
 AFRAME.registerComponent('simple-link', {
   schema: {
-    lookAtCamera: {
+    active: {
       default: true,
       type: 'boolean'
     },
@@ -217,7 +217,9 @@ AFRAME.registerComponent('simple-link', {
    *
    */
   navigate: function navigate() {
-    window.location = this.data.href;
+    if (this.data.active) {
+      window.location = this.data.href;
+    }
   }
 });
 
